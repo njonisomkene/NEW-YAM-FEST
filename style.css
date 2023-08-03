@@ -36,8 +36,8 @@ ul{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .image-fluid{
@@ -48,19 +48,25 @@ ul{
     background-color: #690b0b;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
+    display: none;
+
 }
+
 
 .nav-auto{
     margin: auto !important;
 }
+
+
 .navbar-nav{
     padding-left: 0;
     margin-bottom: 0;
 }
+
 .navbar-nav li a{
     position: relative;
     display: inline-block;
@@ -71,27 +77,28 @@ ul{
     letter-spacing: 2px;
 }
 
-/* .navbar-nav li a:hover{
+.navbar-nav li a:hover{
     background-color: #690b0b;
     border-radius: 20px;
-} */
+} 
 
-/* .navbar-nav .active{
+.navbar-nav .active{
 
     background-color: #690b0b;
     border-radius: 10px;
 
-} */
+}
 
 .navbar-right{
     position: relative;
     width: 140px;
     height: 50px;
-    padding-top: 13px;
+    padding-top: 3px;
     text-align: center;
     background-color: #690b0b;
     border-radius: 35px;
 }
+
 .navbar-toggle{
     position: relative;
     padding: 0.25rem 0.75rem;
@@ -99,6 +106,9 @@ ul{
     border: none;
     cursor: pointer;
 }
+
+
+
 .navbar-toggle span{
     display: block;
     width: 22px;
@@ -117,22 +127,37 @@ ul{
 }
 
 
-/* =========header ends========== */
+/* =========header ends==========*/
+
+
+/* ======home banner start======= */
+.home-banner{
+    position: relative;
+}
+
+
+/* ===========home banner ends======= */
 @media (max-width:768px) {
     .navbar .container{
         flex-wrap: nowrap;
     }
-    .navbar-toggle{
+
+    .navbar-toggle {
         display: none;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         display: flex;
         flex-direction: row;
     }
+
     .navbar-collapse{
         display: flex;
         flex-basis: auto;
     }
+    .navbar-nav li a{
+        padding-left: 1rem;
+    }
+
     
 }
